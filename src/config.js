@@ -23,7 +23,7 @@ const config = {
   googleReviewUrl: 'https://lien-google-avis.com',
 
   // URL de base pour les QR codes (changer en production)
-  appBaseUrl: 'http://localhost:3000',
+  appBaseUrl: 'https://roue-avis.vercel.app',
 
   // Mot de passe du tableau de bord commerçant (/dashboard)
   dashboardPassword: 'norddigital2024',
