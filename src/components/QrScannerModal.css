@@ -1,0 +1,78 @@
+.qr-scanner-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 2000;
+}
+
+.qr-scanner-modal {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.qr-scanner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.qr-scanner-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.qr-scanner-close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f5f9;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.qr-scanner-hint {
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.qr-scanner-region {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000000;
+  min-height: 280px;
+}
+
+.qr-scanner-region video {
+  border-radius: 12px;
+}
+
+.qr-scanner-status {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.qr-scanner-error {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #dc2626;
+}

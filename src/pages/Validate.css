@@ -1,0 +1,212 @@
+.validate-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.validate-page--loading,
+.validate-page--error,
+.validate-page--auth {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.validate-card--auth h1 {
+  font-size: 1.35rem;
+}
+
+.validate-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.validate-auth-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.validate-auth-form input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.validate-auth-form .validate-button {
+  margin-bottom: 0;
+}
+
+.validate-page--pending {
+  background: linear-gradient(160deg, #ea580c, #f97316);
+}
+
+.validate-page--active {
+  background: linear-gradient(160deg, #16a34a, #22c55e);
+}
+
+.validate-page--used {
+  background: linear-gradient(160deg, #dc2626, #ef4444);
+}
+
+.validate-page--expired {
+  background: linear-gradient(160deg, #4b5563, #6b7280);
+}
+
+.validate-page--success {
+  background: linear-gradient(160deg, #16a34a, #22c55e);
+}
+
+.validate-card--success h1 {
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.validate-success-check {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.4);
+  animation: successPop 0.5s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+}
+
+.validate-prize--success {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.validate-button--success {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: #111827;
+  margin-bottom: 0;
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.validate-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 28px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+.validate-commerce {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.validate-card h1 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.validate-message {
+  margin: 0 0 24px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.validate-prize {
+  display: inline-block;
+  padding: 16px 28px;
+  margin-bottom: 24px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111827;
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  border-radius: 14px;
+}
+
+.validate-prize--muted {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.validate-button {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.validate-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.validate-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.validate-error {
+  margin: 0 0 12px;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+.validate-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.validate-link:hover {
+  text-decoration: underline;
+}
