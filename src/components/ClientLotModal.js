@@ -11,6 +11,8 @@ import {
   toDate,
 } from '../services/participationService';
 import DevTestButtons from './DevTestButtons';
+import GoogleReviewButton from './GoogleReviewButton';
+import './FortuneWheel.css';
 
 function ClientLotModal({ lot, isNewWin, onClose }) {
   const status = resolveLotStatus(lot);
@@ -46,6 +48,8 @@ function ClientLotModal({ lot, isNewWin, onClose }) {
               ? `Revenez dans ${hoursLeft} heure${hoursLeft > 1 ? 's' : ''} pour voir votre QR code`
               : 'Votre QR code sera bientôt disponible'}
           </p>
+
+          <GoogleReviewButton />
         </>
       );
     }
@@ -85,18 +89,7 @@ function ClientLotModal({ lot, isNewWin, onClose }) {
             label="Temps restant pour récupérer votre lot"
           />
 
-          <p className="modal-hint">
-            Laissez-nous un avis Google pour profiter de votre lot
-          </p>
-
-          <a
-            href={config.googleReviewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="google-review-button"
-          >
-            Laisser un avis Google
-          </a>
+          <GoogleReviewButton />
         </>
       );
     }
